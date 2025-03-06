@@ -3,3 +3,5 @@ username: workdhruvateja
 password: tqaNHUnMEYGxcyjY
 
 223.237.163.242
+
+mongodb+srv://workdhruvateja:tqaNHUnMEYGxcyjY@project-db.t99lx.mongodb.net/?retryWrites=true&w=majority&appName=project-db
