@@ -1,4 +1,4 @@
-const Unit = require('../Models/unitModel');
+const Unit = require('../Models/UnitModel');
 
 // Create a new unit
 const createUnit = async (req, res) => {
