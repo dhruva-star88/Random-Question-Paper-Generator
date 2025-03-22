@@ -4,7 +4,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const courseRoutes = require('./Routes/courseRouter');
-
+const unitRoutes = require('./Routes/unitRouter');
+const questionsRoutes = require('./Routes/questionsRoute');
 const app = express();
 
 // Use cors middleware
@@ -28,6 +29,8 @@ mongoose.connect(MONGO_URI, { dbName: "project-db" })
 .catch((err) => console.error("MongoDB Connection Error:", err));
 
 app.use('/api', courseRoutes);
+app.use('/api', unitRoutes);
+app.use('/api', questionsRoutes);
 
 // Start the server
 app.listen(PORT, () => {
